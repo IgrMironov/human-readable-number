@@ -1,8 +1,8 @@
 module.exports = function toReadable (number) {
-    let digit = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+let digit = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
 let digitTh = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
 let digitTy = ['twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']; 
-if (number == undefined || number == 0) return 'zero';
+if (number === 0 || number === undefined) return 'zero';
 if (number <= 9) return digit[number - 1];
 if (number <= 19) return digitTh[number - 10];
 if (number <= 99) {
